@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300i,400,700&display=swap&subset=latin-ext');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Muli', sans-serif;
+	background-color: #ffffff;
+}
+ul, li {
+	list-style-type: none;
+}
+
+hr {
+	height: 8px;
+	margin: 15px 0 0 0;
+	background-color: #ff5722;
+	outline: none;
+	border-width: 2px 0 0 0;
+	border-style: solid;
+	border-color: transparent;
+}
+hr.first {
+	margin: 0;
+}
+div.arow {
+	width: 0;
+	height: 0;
+	border-width: 24px;
+	border-style: solid;
+	border-color: #ff5722 transparent transparent transparent;
+	margin-left: 48%;
+	animation: move 5s linear infinite;
+}
+
+
+section.personal-info {
+	height: 300px;
+	padding: 25px 0 20px 0;
+}
+
+section.personal-info .image {
+	float: right;
+	margin-right: 40px;
+	height: 250px;
+	width: 250px;
+	/*For Image Border*/
+	border: 7px #ff5722;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: dashed;
+	border-left-style: solid;
+	border-radius: 50%;
+	overflow: hidden;
+	background-image: url(person.jpg);
+	background-size: cover;
+	animation: round 1s linear infinite;
+}
+/*
+@keyframes round {
+	0%, 100% {
+		border-top-style: dotted;
+		border-right-style: solid;
+		border-bottom-style: solid;
+		border-left-style: solid;
+	}
+	25% {
+		border-top-style: solid;
+		border-right-style: dotted;
+		border-bottom-style: solid;
+		border-left-style: solid;
+	}
+	50% {
+		border-top-style: solid;
+		border-right-style: solid;
+		border-bottom-style: dotted;
+		border-left-style: solid;
+	}
+	75% {
+		border-top-style: solid;
+		border-right-style: solid;
+		border-bottom-style: solid;
+		border-left-style: dotted;
+	}
+}
+*/
+section.personal-info .info-details {
+	width: 50%;
+	margin-left: 50px;
+	height: 250px;
+}
+
+section.personal-info .info-details li {
+	margin-top: 27px;
+}
+
+section.personal-info .info-details li h4 {
+	font-size: 27px;
+	display: inline-block;
+	font-weight: 500;
+	color: #ff5722;
+	padding-right: 45px;
+}
+
+section.personal-info .info-details li p {
+	width: 400px;
+	display: inline-block;
+	margin-top: 7px;
+	font-size: 21px;
+}
+
+section.personal-info .info-details li p.under {
+	text-decoration: underline;
+}
+/*End First Part*/
+
+/*Start Education*/
+
+section.edu {
+	background-color: rgba(101, 132, 100, 0.16);
+	height: 200px
+}
+
+section.edu h3 {
+	margin-left: 25px;
+	font-size: 30px;
+	position: relative;
+	color: #ff5722;
+    font-weight: 500;
+}
+section.edu h3:after {
+	content: "";
+	background: #ff5722;
+    height: 5px;
+    width: 90px;
+    position: absolute;
+    top: 38px;
+    left: 0%;
+}
+
+section.edu p{
+	width: 500px;/*This Will Change or Delete When Data Entered*/
+    height: 20px;
+    background-color: #aaa;
+    margin-left: 18%;
+    margin-top: 20px;
+}
+
+section.edu p.short {
+	width: 180px;
+}
+
+/*Edit on Consept and Fixed for Stable Design*/
+section.work h3:after {
+	width: 120px;
+}
+section.study h3:after {
+	width: 150px;
+}
+
+footer {
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 400;
+	padding: 5px 0;
+	background-color: rgba(0,0,0,.1);
+	color: #000;
+}
+
+/*Over Write*/
+p{
+	border-radius: 5px !important;
+}
